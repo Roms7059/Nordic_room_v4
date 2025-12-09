@@ -2,7 +2,7 @@
 import { RouterView, RouterLink } from 'vue-router'
 import { ref } from 'vue'
 import type { ISourceOptions } from "tsparticles-engine";
-import AudioTracks from './components/AudioTracks.vue' // Import the new component
+import Oscilloscope from './components/Oscilloscope.vue'; // Import the new component
 
 const options: ISourceOptions = ref({
   background: {
@@ -61,5 +61,5 @@ const options: ISourceOptions = ref({
   <div class="container">
     <RouterView />
   </div>
-  <AudioTracks />
+  <Oscilloscope />
 </template>
