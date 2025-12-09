@@ -1,18 +1,31 @@
 <script setup lang="ts">
-defineProps<{
+import { computed } from 'vue'
+
+const props = defineProps<{
   project: {
     title: string
     description: string
     type: string
-    image: string
+    image?: string // Make image optional
+    embedId?: string // Add embedId
   }
 }>()
+
+const imageUrl = computed(() => {
+  if (props.project.image) {
+    return props.project.image
+  }
+  if (props.project.embedId) {
+    return `https://img.youtube.com/vi/${props.project.embedId}/mqdefault.jpg`
+  }
+  return 'https://via.placeholder.com/320x180?text=No+Image' // Placeholder
+})
 </script>
 
 <template>
   <div class="featured-project">
     <div class="project-image">
-      <img :src="project.image" :alt="project.title">
+      <img :src="imageUrl" :alt="project.title">
     </div>
     <div class="project-info">
       <span class="project-type">{{ project.type }}</span>

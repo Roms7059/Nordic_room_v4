@@ -1,23 +1,13 @@
 <script setup lang="ts">
 import FeaturedProject from '../components/FeaturedProject.vue'
 import SocialLinks from '../components/SocialLinks.vue'
+import { useProjectStore } from '../stores/projects'
+import { storeToRefs } from 'pinia'
 
-const featuredProjects = [
-  {
-    id: 1,
-    title: 'Chants des Anciens',
-    description: 'Une fusion entre chants traditionnels nordiques et arrangements modernes',
-    type: 'Album',
-    image: '/projects/chants-anciens.jpg'
-  },
-  {
-    id: 2,
-    title: 'Musique pour "Les Runes du Destin"',
-    description: 'Bande sonore originale pour le film documentaire sur les traditions nordiques',
-    type: 'Bande Sonore',
-    image: '/projects/runes-destin.jpg'
-  }
-]
+const projectStore = useProjectStore()
+const { projects } = storeToRefs(projectStore)
+
+const featuredProjects = projects.value.slice(0, 2); // Get the first two projects from the store
 </script>
 
 <template>
