@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "Conception Sonore pour 'L'Écho du Silence'",
+      "description": "Création de l'intégralité du design sonore pour un court-métrage dramatique, incluant ambiances, effets spéciaux et Foley.",
+      "type": "Sound Design",
+      "embedId": "dQw4w9WgXcQ", 
+      "date": "2025"
+    },
+    {
+      "id": "2",
+      "title": "Mixage Audio pour l'Album 'Digital Horizons'",
+      "description": "Mixage complet d'un album de musique électronique, optimisation de la clarté, de la dynamique et de la spatialisation.",
+      "type": "Mixage Audio",
+      "embedId": "dQw4w9WgXcQ",
+      "date": "2024"
+    },
+    {
+      "id": "3",
+      "title": "Post-Production Sonore Documentaire 'Terres Oubliées'",
+      "description": "Nettoyage audio, restauration, sound design et mixage pour un documentaire sur la nature sauvage.",
+      "type": "Post-Production",
+      "embedId": "dQw4w9WgXcQ",
+      "date": "2023"
+    },
+    {
+      "id": "4",
+      "title": "Intégration Sonore Jeu Vidéo 'Chroniques Stellaires'",
+      "description": "Intégration et optimisation des assets sonores (SFX, musique, voix) dans le moteur de jeu, gestion des banques sonores.",
+      "type": "Audio pour Jeu Vidéo",
+      "embedId": "dQw4w9WgXcQ",
+      "date": "2023"
+    }
+  ]
+}
